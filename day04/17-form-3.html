@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form3</title>
+  </head>
+  <body>
+    <form action="/users/login" method="post">
+      <input type="text" placeholder="Adinizi giriniz" name="name" />
+      <br />
+      <br />
+      <input type="text" placeholder="soyadinizi giriniz" />
+      <br />
+      <br />
+      <input
+        type="number"
+        placeholder="maasinizi giriniz"
+        name="salary"
+      /><br /><br />
+
+      <input type="email" placeholder="emailinizi giriniz" name="email" />
+      <br /><br />
+
+      <input type="password" placeholder="sifrenizi giriniz" name="password" minlength="5" maxlength="18" min="0" max="101"/>
+      <br /><br />
+      <!-- ! minlength - maxlength uzunluklar
+           ! min - max girilebilecek degerler  -->
+
+      <input type="tel" placeholder="tel no giriniz" name="tel" required/>
+      <!-- ! required feild'ı boş bırakılmaması için kullanılır -->
+      <br /><br />
+
+      <input type="search" placeholder="search something" name="search" />
+      <br /><br />
+
+      <input type="url" placeholder="url giriniz" name="url" />
+      <br /><br />
+
+      <input type="hidden" name="code" />
+      <br /><br />
+      <!-- ! kullanıcıdan gizlemek için "hidden" kullanıyoruz -->
+
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Kadin</label>
+      <!-- ! radio buttonda gelen "id" ile label tagınde çıkan "for" attribute'ü aynı olması gerekli-->
+
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Erkek</label>
+
+      <!-- !  radio buttonlarda sadece tek secim yapilabilmesi icin "name" degerlerinin AYNI olmasi gerekli-->
+      <br /><br />
+
+      <input
+        type="checkbox"
+        name=""
+        id="chk"
+        checked
+        disabled
+        name="chk-name"
+      />
+      <label for="chk">Maasimi eksiksiz aldim</label>
+
+      <!-- ! input ve label talarini baglamak şcşn "id" ve "for" attributelerine AYNI deger vermeliyim
+           ! eger secimi default olarak SECİLİ yapmak istersemde "checked" parametressini yaziyorum
+           ! secimi default olarak degistirilemez halde birakmak istesem "disabled" paramaetresini yaziyorum-->
+
+      <!-- !  her input ile her label tagi id ve for ile eslesmesi lazim -->
+      <br /><br />
+
+      <input type="file" name="cv" />
+      <br /><br />
+
+      <input type="color" name="cl" id="cl" />
+      <br /><br />
+
+      <input type="range" name="rang" />
+      <br /><br />
+
+      <input type="date" name="date" id="date" />
+      <br /><br />
+
+      <input type="datetime-local" name="dtl" id="dtl" />
+      <br /><br />
+
+      <input type="time" name="time" id="time" />
+      <br /><br />
+
+      <input type="week" name="week" id="week" />
+      <br /><br />
+
+      <input type="month" name="month" id="month" />
+      <br /><br />
+
+      <select name="cities" id="cities" multiple size="3">
+        <option value="choose">choose your city</option>
+        <option value="06">Angara</option>
+        <option value="35">İzmir</option>
+        <option value="16">Bursa</option>
+        <option value="42">Konya</option>
+        <option value="34">İstanbul</option>
+      </select>
+      <br /><br />
+
+      <textarea name="txt" id="txt" cols="30" rows="5"></textarea>
+      <br /><br />
+
+      <input type="button" value="Save" />
+      <input type="submit" value="Send" />
+      <!-- ! "submit" kullandigimiz zaman endpoint belirttigimiz "action" degerine gonderir -->
+      <input type="reset" value="Clear" />
+
+      <button class="btn">Cancel</button>
+
+    </form>
+  </body>
+</html>

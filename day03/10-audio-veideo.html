@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <audio
+      src="../assets/audio/background-music-for-short-dramatic-video-vlogs-epic-promo-30-second-194798.mp3"
+      controls
+      autoplay
+      muted
+    ></audio>
+
+    <!-- ! controls ==> ses dosyasının sayfada görünmesini saglar
+         ! autoplay ==> sayfa acıldıgında otoatik olarak ses dosyası da calmaya baslar
+         ! muted ==> ses dosyası açık halde olur ancak ses mute'lenmis halde olur.. 
+    -->
+    <br />
+
+    <audio controls>
+      <source src="../assets/audio/coniferous-forest-142569.mp3" />
+      Browser not supperted this audio
+    </audio>
+
+    <!-- * 2. kullanımda yol biraz uzatılıyor ancak <audio tagları arasında herhangi bir mesaj text'i yazılabilir -->
+
+    <br />
+
+    <video
+      src="../assets/video/okyanus-65560.mp4"
+      controls
+      autoplay
+      loop
+      width="500"
+      height="480"
+    ></video>
+
+    <video
+      width="500"
+      height="480"
+      controls
+      autoplay
+      loop
+      poster="../assets/image/pexels-narishsltnv-18280318.jpg"
+    >
+      <source src="../assets/video/istanbul.mp4" />
+    </video>
+
+    <!-- ! video tagı içerisine "poster" koydugumda kapak resmi oluyor -->
+  </body>
+</html>

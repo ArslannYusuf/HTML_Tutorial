@@ -1,0 +1,8 @@
+{
+  "editor.tokenColorCustomizations": {
+    "comments": "",
+    "textMateRules": []
+  },
+  "editor.guides.indentation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
